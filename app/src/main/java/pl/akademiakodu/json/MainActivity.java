@@ -15,35 +15,48 @@ public class MainActivity extends AppCompatActivity {
 
         JSONParser parser = new JSONParser();
         parser.readJSON("{\n" +
-                "    \"colorsArray\":[{\n" +
-                "            \"colorName\":\"red\",\n" +
-                "            \"hexValue\":\"#f00\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"colorName\":\"green\",\n" +
-                "            \"hexValue\":\"#0f0\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"colorName\":\"blue\",\n" +
-                "            \"hexValue\":\"#00f\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"colorName\":\"cyan\",\n" +
-                "            \"hexValue\":\"#0ff\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"colorName\":\"magenta\",\n" +
-                "            \"hexValue\":\"#f0f\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"colorName\":\"yellow\",\n" +
-                "            \"hexValue\":\"#ff0\"\n" +
-                "        },\n" +
-                "        {\n" +
-                "            \"colorName\":\"black\",\n" +
-                "            \"hexValue\":\"#000\"\n" +
-                "        }\n" +
-                "    ]\n" +
+                "   \"data\": [\n" +
+                "      {\n" +
+                "         \"id\": \"X999_Y999\",\n" +
+                "         \"from\": {\n" +
+                "            \"name\": \"Tom Brady\", \"id\": \"X12\"\n" +
+                "         },\n" +
+                "         \"message\": \"Looking forward to 2010!\",\n" +
+                "         \"actions\": [\n" +
+                "            {\n" +
+                "               \"name\": \"Comment\",\n" +
+                "               \"link\": \"http://www.facebook.com/X999/posts/Y999\"\n" +
+                "            },\n" +
+                "            {\n" +
+                "               \"name\": \"Like\",\n" +
+                "               \"link\": \"http://www.facebook.com/X999/posts/Y999\"\n" +
+                "            }\n" +
+                "         ],\n" +
+                "         \"type\": \"status\",\n" +
+                "         \"created_time\": \"2010-08-02T21:27:44+0000\",\n" +
+                "         \"updated_time\": \"2010-08-02T21:27:44+0000\"\n" +
+                "      },\n" +
+                "      {\n" +
+                "         \"id\": \"X998_Y998\",\n" +
+                "         \"from\": {\n" +
+                "            \"name\": \"Peyton Manning\", \"id\": \"X18\"\n" +
+                "         },\n" +
+                "         \"message\": \"Where's my contract?\",\n" +
+                "         \"actions\": [\n" +
+                "            {\n" +
+                "               \"name\": \"Comment\",\n" +
+                "               \"link\": \"http://www.facebook.com/X998/posts/Y998\"\n" +
+                "            },\n" +
+                "            {\n" +
+                "               \"name\": \"Like\",\n" +
+                "               \"link\": \"http://www.facebook.com/X998/posts/Y998\"\n" +
+                "            }\n" +
+                "         ],\n" +
+                "         \"type\": \"status\",\n" +
+                "         \"created_time\": \"2010-08-02T21:27:44+0000\",\n" +
+                "         \"updated_time\": \"2010-08-02T21:27:44+0000\"\n" +
+                "      }\n" +
+                "   ]\n" +
                 "}");
     }
 }
